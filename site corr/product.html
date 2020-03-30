@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>produits</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    
+     
+        <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       
+    <img src="res/etalogo.jpg" alt="logo" width="200">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto navbar-links">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="product.html">Our products</a>
+    </li>
+   
+    <li class="nav-item">
+      <a class="nav-link" href="Contact.html">Contact Us</a>
+    </li>
+  </ul>
+ 
+</div>
+</nav>
+    <div class="header">
+        <h1>Nos Gammes de produits pour vos besoins <br> vous servir c'est notre responsabilité </h1>
+    </div>
+
+    <div class="courses">
+        <div id="ex1" class="modal">
+            <p>plaques en carton ondulé</p>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
+          <div id="ex2" class="modal">
+            <p>caisses en carton simple et double ondulation</p>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
+          <div id="ex3" class="modal">
+            <p>separation special en carton</p>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
+          <div id="ex4" class="modal">
+            <p>fond et couvercle</p>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
+          <div id="ex5" class="modal">
+            <p>tous les formes special</p>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
+          <div id="ex6" class="modal">
+            <p>scotch transparent et havane</p>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
+        <div class="row">
+           <div class="img1 image col-xs-12 col-md "> <a href="#ex1" rel="modal:open"><button class="bt">view more</button> </a></div> 
+           <div class="img2 image col-xs-12 col-md"> <a href="#ex2" rel="modal:open"><button class="bt">view more</button> </a> </div>
+           <div class="img3 image col-xs-12 col-md"> <a href="#ex3" rel="modal:open"><button class="bt">view more</button> </a> </div> 
+        </div>
+        <div class="row">
+            <div class="img4 image col-xs-12 col-md"> <a href="#ex4" rel="modal:open"><button class="bt">view more</button> </a> </div>
+            <div class="img5 image col-xs-12 col-md"> <a href="#ex5" rel="modal:open"><button class="bt">view more</button> </a> </div>
+            <div class="img6 image col-xs-12 col-md"> <a href="#ex6" rel="modal:open"><button class="bt">view more</button> </a> </div>
+        </div>
+        
+    </div>
+  
+  <form id="commande" class="courses-form">
+
+    <h4>vous pouvez taper vos commandes içi</h4>
+    <div  class="input-groupe">
+      <label>Company Name</label> 
+      <input id="namep" type="text" placeholder="company name" class="input-contact"> 
+  </div>
+  <div  class="input-groupe">
+    <label>address</label> 
+    <input id="addressp" type="text" placeholder="address" class="input-contact"> 
+</div>
+  <div class="input-groupe">
+    <label>Email address</label> 
+    <input id="emailp" type="email" placeholder="name@example.com" class="input-contact">
+</div>
+<div class="input-groupe">
+    <label>Phone number</label> 
+    <input id="numberp" type="number" placeholder="your phone Number" class="input-contact">
+</div>
+    <div class="buttons">
+        <button id="bold" type="button">B</button>
+        <button id="italic" type="button">I</button>
+        <button id="Underline" type="button">Underline</button>
+        <select   onchange=" changeFontSize(this)" >
+            <option  value="20" >20px</option>
+            <option  value="30" >30px</option>
+            <option  value="40" >40px</option>
+        </select>
+        <select onchange="changeFontFamily(this)">
+            <option value="arial">arial</option>
+            <option value="verdana">Verdana</option>
+            <option value="Geneva">Geneva</option>
+        </select>
+    </div>
+    <textarea id="text textp" rows="5" cols="50"  style="width:300px;height:200px" ></textarea>
+    <div class="input-groupe">  
+      <input id="btnSubmitp" type="button" value="submit"> 
+</form>
+</body>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCAjvyzw50LpStKeDn1WxBywl0iBHb7zrE",
+    authDomain: "chekpoint-firebase.firebaseapp.com",
+    databaseURL: "https://chekpoint-firebase.firebaseio.com",
+    projectId: "chekpoint-firebase",
+    storageBucket: "chekpoint-firebase.appspot.com",
+    messagingSenderId: "218655409915",
+    appId: "1:218655409915:web:9300c6a24eaf9f04da125e",
+    measurementId: "G-MQFGGH7NBL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="js/firebase.js"></script>
+
+<script src="C:\Users\DELL-PC\Desktop\site corr\js\main.js"></script>
+
+
+
+
+
+
+</html>

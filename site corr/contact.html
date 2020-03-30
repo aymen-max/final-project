@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    
+     
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       
+    <img src="res/etalogo.jpg" alt="logo" width="200">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto navbar-links">
+    <li class="nav-item ">
+      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="product.html">Our products</a>
+    </li>
+   
+    <li class="nav-item active">
+      <a class="nav-link" href="Contact.html">Contact Us</a>
+    </li>
+  </ul>
+ 
+</div>
+</nav>
+            <div class="header">
+                    <h1>Contact</h1>
+            </div>
+            <div class="ktiba1">
+              <h2>E-mail : majbrimounir1@gmail.com</h2>
+              <br>
+
+<h2>E.T.A. Siège social :</h2>
+<br>
+
+<h2>19, Rue Med Taher Ben ACHOUR</h2>
+<br>
+<h2>Sidi Rezig - Megrine 2033</h2>
+<br>
+<h2>Tunis - Tunisie</h2>
+<br>
+
+<h2>USINE : <br>
+
+ROUTE DE KLEDIA KM 12 FERME : ERRAOUDHA, NASSEN <br>
+
+ GSM : 52 240 796/29 984 444</h2>
+            </div>
+                <form id="Contact" class="contact-form">
+                <div  class="input-groupe">
+                <label>Name</label> 
+                <input id="name" type="text" placeholder="your name" class="input-contact"> 
+            </div>
+            
+            <div class="input-groupe">
+                <label>Email address</label> 
+                <input id="email" type="email" placeholder="name@example.com" class="input-contact">
+            </div>
+            <div class="input-groupe">
+                <label>Phone number</label> 
+                <input id="number" type="number" placeholder="your phone Number" class="input-contact">
+            </div>
+            <div class="input-groupe">  
+                <input id="btnSubmit" type="button" value="submit" class="submit"> 
+            </div> 
+            </form>
+            <form class="courses-form">
+
+              <h4>Feedback</h4>
+              <div class="buttons">
+                  <button id="bold" type="button">B</button>
+                  <button id="italic" type="button">I</button>
+                  <button id="Underline" type="button">Underline</button>
+                  <select   onchange=" changeFontSize(this)" >
+                      <option  value="20" >20px</option>
+                      <option  value="30" >30px</option>
+                      <option  value="40" >40px</option>
+                  </select>
+                  <select onchange="changeFontFamily(this)">
+                      <option value="arial">arial</option>
+                      <option value="verdana">Verdana</option>
+                      <option value="Geneva">Geneva</option>
+                  </select>
+              </div>
+              <textarea id="text" rows="5" cols="50"  style="width:300px;height:200px" ></textarea>
+          </form>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCAjvyzw50LpStKeDn1WxBywl0iBHb7zrE",
+    authDomain: "chekpoint-firebase.firebaseapp.com",
+    databaseURL: "https://chekpoint-firebase.firebaseio.com",
+    projectId: "chekpoint-firebase",
+    storageBucket: "chekpoint-firebase.appspot.com",
+    messagingSenderId: "218655409915",
+    appId: "1:218655409915:web:9300c6a24eaf9f04da125e",
+    measurementId: "G-MQFGGH7NBL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="js/firebase.js"></script>
+
+<script src="C:\Users\DELL-PC\Desktop\site corr\js\main.js"></script>
+
+</html>
